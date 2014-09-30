@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Public Utilities Mapping Application</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/typeahead.js-bootstrap.css"/>
+	<link rel="stylesheet" href="css/main.css"/>
+		<link rel="stylesheet" href="http://js.arcgis.com/3.8/js/esri/css/esri.css">
+		<script src="http://js.arcgis.com/3.8/"></script>
+		<!--[if lt IE9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+			<nav class="navbar navbar-inverse" role="navigation">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Public Utilities Mapping Application</a>
+				</div>
+			
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse pull-right">
+				</div><!-- /.navbar-collapse -->
+			</nav>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-4">
+						<div>
+						<input id="searchInput" type="text" class="form-control typeahead" placeholder="Enter an address or a facility ID">
+							
+						</div>
+						<div class="panel-group" id="accordion">
+						  <div class="panel panel-default">
+						    <div class="panel-heading">
+						      <h4 class="panel-title">
+						        <a data-toggle="collapse" data-parent="#accordion" href="#asbuiltPanel">
+						          As-Builts
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="asbuiltPanel" class="panel-collapse collapse in">
+						      <div class="panel-body">
+						        	<input id="asbuiltInput" type="text" class="form-control typeahead" placeholder="Enter a project name">
+						        	<table id="asbuiltTable" class="table table-striped">
+						        		<thead>
+						        			<tr><th>Sheet</th><th>View</th><th>PDF</th>
+						        		</thead>
+						        		<tbody>
+						        			
+						        		</tbody>
+						        	</table>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="panel panel-default">
+						    <div class="panel-heading">
+						      <h4 class="panel-title">
+						        <a data-toggle="collapse" data-parent="#accordion" href="#layerPanel">
+						          Layers
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="layerPanel" class="panel-collapse collapse">
+						      <div class="panel-body">
+
+						      </div>
+						    </div>
+						  </div>
+						</div>	
+					</div>
+					<div id="map" class="col-xs-8">
+
+					</div>					
+				</div>
+			</div>
+		<script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/typeahead.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

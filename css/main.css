@@ -1,0 +1,61 @@
+html, body {
+	height: 100%;
+}
+
+#wrapper {
+	height: auto;
+	min-height: 100%;
+	margin: 0 auto -60px;
+	padding: 0 0 60px;
+}
+
+#footer {
+	height: 60px;
+	background-color: #eee;
+}
+
+.page-header {
+	padding-top: 60px;
+}
+
+#map {
+	top: 60px;
+	bottom: 0px;
+	right: 0px;
+	position: absolute; !important;
+}
+
+.container {
+	width: 100%;
+}
+
+#accordion {
+	margin-top: 20px;
+}
+
+.panel-group .panel { overflow:visible; }
+
+.layerDiv {
+	margin-bottom: 10px;
+}
+
+.layerDiv .btn {
+	margin-right: 5px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+	#map {
+		position: relative !important;
+		width: 90%;
+		height: 500px;
+		margin-left: 20px;
+		margin-right: 10px;
+	}
+
+	.col-xs-4 {
+		width: 100%;
+	}
+
+
+}
